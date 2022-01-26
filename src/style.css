@@ -54,3 +54,28 @@ body {
     color: #DEEBF8;
     font-weight: 600;
 }
+
+.main-section {
+    background: url('./images/react-icon-large.png') no-repeat;
+    background-color: #282D35;
+    background-position: right 75%;
+    background-size: 12rem;
+    padding: 5rem 2rem;
+}
+
+.heading-primary {
+    margin-top: 0;
+    font-size: 3.9rem;
+    color: #FFFFFF;
+}
+
+.main-item {
+    font-size: 1.6rem;
+    color: #FFFFFF;
+    margin: 1rem 0;
+}
+
+.main-item::marker {
+    color: #61DAFB;
+    font-size: 2.5rem;
+}
