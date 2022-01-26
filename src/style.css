@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family: 'inter', sans-serif;
+}
+
+.navbar {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #21222A;
+}
+
+.logoBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    width: 2.89rem;
+    animation: rotation ease-in-out infinite 5s;
+}
+
+.logo-heading {
+    font-size: 2.225rem;
+    font-weight: 700;
+    margin-left: .7rem;
+    color: #61DAFB;
+}
+
+@keyframes rotation {
+    0% { 
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.navigation-text {
+    font-size: 1.6rem;
+    color: #DEEBF8;
+    font-weight: 600;
+}
