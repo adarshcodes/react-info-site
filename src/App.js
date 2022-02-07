@@ -9,15 +9,20 @@ import "./style.css";
 import NavBar from "./components/NavBar";
 import Main from "./components/Main";
 
-class App extends React.Component {
-	render() {
-		return (
-			<div>
-				<NavBar />
-				<Main />
-			</div>
-		);
+function App() {
+	const [theme, setTheme] = React.useState(false);
+
+	function toggleDarkMode() {
+		setTheme((prevMode) => !prevMode);
+		console.log(theme);
 	}
+
+	return (
+		<div>
+			<NavBar darkMode={theme} toggleDarkMode={toggleDarkMode} />
+			<Main darkMode={theme} toggleDarkMode={toggleDarkMode} />
+		</div>
+	);
 }
 
 export default App;
